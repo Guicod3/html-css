@@ -6,25 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posição dos fundos</title>
     <style>
+        body{
+            max-width:1080px;
+            margin: auto;
+            height: 1080px;
+            background-color: black
+        }
+
+        header{
+            color: rgb(255, 255, 255);
+            background-color: grey;
+            justify-content: center;
+            min-height: 40px;
+            padding: 5px;
+            margin: 15px;
+            border-radius: 20px;
+        }
+
+        header > h1{
+            text-align: center;
+            margin: auto;
+            padding: 7px;
+            justify-content: center;
+        }
+
         div.grid{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             column-gap: 2px;
             row-gap: 2px;
-            width: 1080px;
-            margin-left: 410px;
-            justify-content: center;
+            height: 100vh;
         }
+
         div.bloco{
             height: 360px;
             width: 360px;
             border: 2px solid black;
             border-radius: 20px;
+            align-items: center;
+            justify-content: center;
         }
 
         div#q1{
             background-image: url(Imagens/Gui.jpg);
             background-position: top left;
+        }
+        
+        #q1:active{
+            background-image: url(Imagens/vemdormir.jpg);
+            background-size: cover;
         }
 
         div#q2{
@@ -32,9 +62,20 @@
             background-position: top center;
         }
 
+        #q2:active{
+            background-image: url(Imagens/tequero.png);
+            background-size: cover;
+            background-position: center;
+        }
+
         div#q3{
             background-image: url(Imagens/Gui.jpg);
             background-position: top right;
+        }
+
+        #q3:active{
+            background-image: url(Imagens/teamofome.jpeg);
+            background-size: cover;
         }
 
         div#q4{
@@ -42,9 +83,19 @@
             background-position: center left;
         }
 
+        #q4:active{
+            background-image: url(Imagens/beijo.jpg);
+            background-size: cover;
+        }
+
         div#q5{
             background-image: url(Imagens/Gui.jpg);
             background-position: center center;
+        }
+
+        #q5:active{
+            background-image: url(Imagens/gostosa.jpg);
+            background-size: cover;
         }
 
         div#q6{
@@ -52,9 +103,19 @@
             background-position: center right;
         }
 
+        #q6:active{
+            background-image: url(Imagens/teamofome.jpeg);
+            background-size: cover;
+        }
+
         div#q7{
             background-image: url(Imagens/Gui.jpg);
             background-position: bottom left;
+        }
+
+        #q7:active{
+            background-image: url(Imagens/gostosa.jpg);
+            background-size: cover;
         }
 
         div#q8{
@@ -62,9 +123,19 @@
             background-position: bottom center;
         }
 
+        #q8:active{
+            background-image: url(Imagens/beijo.jpg);
+            background-size: cover;
+        }
+
         div#q9{
             background-image: url(Imagens/Gui.jpg);
             background-position: bottom right;
+        }
+
+        #q9:active{
+            background-image: url(Imagens/vemdormir.jpg);
+            background-size: cover;
         }
 
         
@@ -72,16 +143,19 @@
     </style>
 </head>
 <body>
-    <div class="grid">
-        <div class="bloco" id="q1"></div>
-        <div class="bloco" id="q2"></div>
-        <div class="bloco" id="q3"></div>
-        <div class="bloco" id="q4"></div>
-        <div class="bloco" id="q5"></div>
-        <div class="bloco" id="q6"></div>
-        <div class="bloco" id="q7"></div>
-        <div class="bloco" id="q8"></div>
-        <div class="bloco" id="q9"></div>
-    </div>
+    <header>
+        <h1>ESCOLHA UM QUADRADO ABAIXO - CLIQUE E SEGURE</h1>
+    </header>
+        <div class="grid">
+            <div class="bloco" id="q1"></div>
+            <div class="bloco" id="q2"></div>
+            <div class="bloco" id="q3"></div>
+            <div class="bloco" id="q4"></div>
+            <div class="bloco" id="q5"></div>
+            <div class="bloco" id="q6"></div>
+            <div class="bloco" id="q7"></div>
+            <div class="bloco" id="q8"></div>
+            <div class="bloco" id="q9"></div>
+        </div>
 </body>
 </html>
