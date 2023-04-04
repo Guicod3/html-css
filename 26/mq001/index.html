@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
+        <span id="burger" class="material-symbols-outlined" onclick="ClickMenu()">menu</span>
+        <nav id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -96,6 +98,15 @@
     <footer>
         <p>Site estudo media queries criado por <a href="https://github.com/Guicod3"><strong>Guilherme Miranda</strong></a>.</p>
     </footer>
-    
+    <script>
+        function ClickMenu() {
+         if   (itens.style.display == 'block')
+          itens.style.display = 'none'
+          else {
+            itens.style.display = 'block'
+          }
+
+        }
+    </script>
 </body>
 </html>
